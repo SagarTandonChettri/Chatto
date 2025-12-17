@@ -1,0 +1,114 @@
+HEY, Sagar here 👋
+
+Since the beginning of my coding journey, I’ve always wanted to build a real-time chat application.
+We use chat apps every day, but creating your own from scratch feels completely different — and honestly, 
+a little crazy 😄.
+
+The main reason I built this project was simple:
+to see whether I could turn something I imagined into something that actually works.
+
+This is the first time I used WebSockets in a Spring Boot backend and connected it with a React frontend.
+There were challenges, bugs, and a lot of learning along the way — but seeing it work in real time was totally worth it.
+
+I know this project can be improved further, and I plan to keep enhancing it over time.
+For now, I’m proud of what I’ve built and what I learned from it.
+
+Thanks for taking the time to check out my code — I hope you like it 😊
+
+
+
+PROJECT DISCRIPTION
+
+
+Chatto – Real-Time Chat Application
+	A full-stack real-time chat application built using Spring Boot and React,
+	featuring JWT-based authentication, protected routes, and WebSocket (STOMP) 
+	messaging for live communication.
+	
+Features
+	Authentication & Security
+		User registration & login
+		JWT access token based authentication
+		Secure REST APIs with Spring Security
+		Protected frontend routes using token validation
+		Automatic logout on token expiration
+	
+	Real-Time Chat (WebSocket)
+		Real-time messaging using WebSocket + STOMP
+		Secure WebSocket handshake with JWT validation
+		User session tracking via WebSocket interceptors
+		Join / leave notifications
+		Messages broadcasted to all connected users
+
+	Backend (Spring Boot)
+		REST APIs for authentication and user validation
+		WebSocket configuration using @EnableWebSocketMessageBroker
+		Custom WebSocket Handshake Interceptor for JWT verification
+		Centralized exception handling
+		MongoDB integration for user persistence
+		Clean layered architecture:
+			Controller
+			Service
+			Repository
+			DTO
+			Security
+			
+
+
+Frontend (React + TypeScript)
+	React with TypeScript
+	ProtectedRoute implementation
+	Axios interceptor for automatic token injection
+	Custom React Hook for WebSocket (useChatSocket)
+	Real-time UI updates without page refresh
+	Message formatting with username display
+	Clean component-based structure
+
+
+	
+Tech Stack🛠️
+Backend
+	Java
+	Spring Boot
+	Spring Security
+	WebSocket (STOMP)
+	JWT
+	MongoDB
+	Maven
+
+Frontend
+	React
+	TypeScript
+	Vite
+	Axios
+	React Router
+	STOMP.js
+	
+
+Project Structure🗂️
+
+Chatto/
+├── Backend/
+│   ├── Controller
+│   ├── Service
+│   ├── Security
+│   ├── ConfigWebSocket
+│   └── Repository
+│
+├── Frontend/
+│   └── FrontEnd/
+│       ├── Pages
+│       ├── Components
+│       ├── Hooks
+│       └── api
+
+
+
+What I Learned / Demonstrated
+	Implementing JWT authentication in REST & WebSocket
+	Securing WebSocket connections
+	Managing React state with real-time updates
+	Writing reusable custom hooks
+	Handling authentication flows end-to-end
+	Debugging WebSocket transport & CORS issues
+	Full-stack integration (Frontend ↔ Backend)
